@@ -21,7 +21,7 @@ public playMusic() {
   try {
     if ( !this.song ) {
       console.log('path: ' + this.file.applicationDirectory);
-      let path = (this.file.applicationDirectory + 'src/assets/media/LeanOnMe.mp3' ).replace(/^file:\/\//, '');
+      let path = (this.file.applicationDirectory + 'www/assets/media/LeanOnMe.mp3' ).replace(/^file:\/\//, '');
       this.song = this.media.create( path );
       // this.song = this.media.create( "../../assets/media/LeanOnMe.mp3" );
       this.song.play();
